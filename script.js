@@ -19,10 +19,10 @@ async function checkWeather(city) {
     weatherImg.src = "./images/error.webp";
     tag.innerHTML = "Sorry, Location not Found!!!";
     tag.style.textAlign = "center";
-      temp.innerHTML = 0;
+      temp.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}<sup>°C
+    </sup>`;
   perHumi.innerHTML = 0;
   // windSpeed.innerHTML = `${weather_data.main.}`;
-  tag.innerHTML = 0;
   windSpeed.innerHTML =  0;
   }
 
