@@ -1,12 +1,14 @@
+
 @font-face {
     font-family: gilroy;
-    src: url('fonts/Gilroy-Regular.ttf');
+    src: url('fonts/Gilroy-SemiBold.ttf');
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: none;
     text-decoration: none;
     font-family: gilroy;
@@ -19,13 +21,20 @@ html , body{
 #container {
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
 #cont {
+    font-family: gilroy;
     width: 30%;
     height: 75vh;
     background-color: #bfe1e1;
@@ -40,9 +49,16 @@ html , body{
     padding: .5vw 2vw;
     height: 50px;
     /* background-color: green; */
+    font-family: gilroy;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #nav input {
@@ -57,6 +73,34 @@ html , body{
     font-family: gilroy;
     font-weight: 600;
     color: rgb(0, 0, 0);
+}
+
+#nav input::-webkit-input-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+#nav input::-moz-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+#nav input:-ms-input-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+#nav input::-ms-input-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
 }
 
 #nav input::placeholder {
@@ -82,10 +126,19 @@ html , body{
     width: 100%;
     height: 30vh;
     /* background-color: yellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #weather img {
@@ -108,14 +161,21 @@ sup{
 }
 
 #footer{
+    font-family: gilroy;
     position: absolute;
     bottom: 0;
     width: 90%;
     height: 100px;
     /* background-color: yellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0vw 3vw;
 }
 
@@ -140,9 +200,15 @@ sup{
     #container {
         width: 100%;
         height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: relative;
     }
     
@@ -159,9 +225,15 @@ sup{
         padding: 2vw 2vw;
         height: 50px;
         /* background-color: green; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     
     #nav input {
@@ -176,6 +248,34 @@ sup{
         font-family: gilroy;
         font-weight: 600;
         color: rgb(0, 0, 0);
+    }
+    
+    #nav input::-webkit-input-placeholder {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4.5vw;
+        font-weight: 300;
+    }
+    
+    #nav input::-moz-placeholder {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4.5vw;
+        font-weight: 300;
+    }
+    
+    #nav input:-ms-input-placeholder {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4.5vw;
+        font-weight: 300;
+    }
+    
+    #nav input::-ms-input-placeholder {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4.5vw;
+        font-weight: 300;
     }
     
     #nav input::placeholder {
@@ -197,15 +297,26 @@ sup{
         position: absolute;
         left: 50%;
         top: 38%;
-        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
         margin-top: 2vw;
         width: 100%;
         height: 30vh;
         /* background-color: yellow; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 1vw;
     }
     
@@ -230,13 +341,20 @@ sup{
     
     #footer{
         position: absolute;
+        font-family: gilroy;
         bottom: 0;
         width: 90%;
         height: 100px;
         /* background-color: yellow; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 0vw 3vw;
     }
     

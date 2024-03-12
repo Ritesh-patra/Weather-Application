@@ -16,7 +16,7 @@ async function checkWeather(city) {
   console.log(weather_data);
 
   if (weather_data.cod === `404`) {
-    weatherImg.src = "/images/error.webp";
+    weatherImg.src = "./images/error.webp";
     tag.innerHTML = "Sorry, Location not Found!!!";
     tag.style.textAlign = "center";
   }
