@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: gilroy;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#cont {
+    width: 30%;
+    height: 75vh;
+    background-color: #bfe1e1;
+    border-radius: 7px;
+    padding: 1vw 1.5vw;
+    position: relative;
+    border: 2px solid #847f7f;
+}
+
+#nav{
+    width: 100%;
+    padding: .5vw 2vw;
+    height: 50px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav input {
+    width: 80%;
+    padding: 1vw 2vw;
+    border-radius: 7px;
+    background-color: transparent;
+    /* backdrop-filter: blur(100px); */
+    margin-top: .5vw;
+    border: 1px solid white;
+    font-size: 1.3vw;
+    font-family: gilroy;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+#nav input::placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+#nav span i{
+    font-size: 2vw;
+    background-color: rgb(238, 236, 236);
+    border-radius: 50%;
+    padding: .5vw .5vw;
+}
+
+#nav span i:hover{
+    background-color: rgb(113, 108, 108);
+}
+
+#weather{
+    margin-top: 2vw;
+    width: 100%;
+    height: 30vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#weather img {
+    width: 50%;
+}
+
+#cel {
+    font-weight: 800;
+    font-size: 3vw;
+}
+
+sup{
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+#tag {
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+}
+
+.ri-drop-fill,.ri-windy-line {
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+
+.per {
+    font-weight: 800;
+}
+
+.perHumi,.per1 {
+    font-family: gilroy;
+    font-weight: 800;
+}
+
+
+/* -----------responsiveness--------------- */
+
+@media (max-width:600px) {
+    #container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    #cont {
+        width: 100%;
+        height: 100vh;
+        background-color: #bfe1e1;
+        padding: 3vw 2.5vw;
+        border-radius: 0px;
+    }
+    
+    #nav{
+        width: 100%;
+        padding: 2vw 2vw;
+        height: 50px;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #nav input {
+        width: 80%;
+        padding: 3.5vw 2vw;
+        border-radius: 7px;
+        background-color: transparent;
+        /* backdrop-filter: blur(100px); */
+        margin-top: .5vw;
+        border: 1.5px solid rgb(255, 255, 255);
+        font-size: 4vw;
+        font-family: gilroy;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
+    
+    #nav input::placeholder {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4.5vw;
+        font-weight: 300;
+    }
+    
+    #nav span i{
+        font-size: 10vw;
+    }
+    
+    #nav span i:hover{
+        background-color: rgb(113, 108, 108);
+    }
+    
+    #weather{
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%,-50%);
+        margin-top: 2vw;
+        width: 100%;
+        height: 30vh;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    
+    #weather img {
+        width: 50%;
+    }
+    
+    #cel {
+        font-weight: 800;
+        font-size: 7vw;
+    }
+    
+    sup{
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    
+    #tag {
+        font-weight: 600;
+        font-size: 9vw;
+    }
+    
+    #footer{
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 100px;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0vw 3vw;
+    }
+    
+    .ri-drop-fill,.ri-windy-line {
+        font-size: 10vw;
+        font-weight: 900;
+    }
+    
+    .per {
+        font-weight: 800;
+    }
+    
+    #ftag {
+        font-weight: 800;
+
+    }
+    
+    .perHumi,.per1 {
+        font-family: gilroy;
+        font-weight: 800;
+    }
+}
