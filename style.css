@@ -37,7 +37,7 @@ html , body{
     font-family: gilroy;
     width: 30%;
     height: 75vh;
-    background-color: #bfe1e1;
+    background-color: #40A2E3;
     border-radius: 7px;
     padding: 1vw 1.5vw;
     position: relative;
@@ -210,12 +210,14 @@ sup{
             -ms-flex-pack: center;
                 justify-content: center;
         position: relative;
+        background-color: #fff;
+        
     }
     
     #cont {
         width: 100%;
-        height: 100vh;
-        background-color: #bfe1e1;
+        height: 80vh;
+        background-color: #40A2E3;
         padding: 3vw 2.5vw;
         border-radius: 0px;
     }
